@@ -4,6 +4,7 @@ var obj=[];
 $(document).ready(function () {
 	$.getJSON( "json2.json", function( data ) {
   		clearMainDiv();
+  		data.reverse();
       	print(data);
   	});
  
