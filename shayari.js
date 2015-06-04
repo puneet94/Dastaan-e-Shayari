@@ -2,6 +2,21 @@
 var obj=[];
 
 $(document).ready(function () {
+	(function(){
+    var imgDiv = document.getElementById("imgDiv");
+
+    var show = function(){
+      imgDiv.style.display = "block";
+      setTimeout(hide, 2000);  // 2 seconds
+    }
+
+    var hide = function(){
+      imgDiv.style.display = "none";
+    }
+
+    show();
+  })();
+  
 	$.getJSON( "json2.json", function( data ) {
   		clearMainDiv();
       	print(data);
