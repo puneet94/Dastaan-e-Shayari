@@ -7,12 +7,7 @@ $(document).ready(function () {
       	print(data);
   	});
  
-	var replace = function(){
-		var str = $(".description").html();
-		console.log(str); 
-    	var res = str.replace(/,/g, "</br>");
-		$(".description").html(res);
-	};
+	
 
 	var clearMainDiv = function(){
 	var divs=document.getElementById("maindiv");
@@ -59,7 +54,7 @@ $(document).ready(function () {
 		newdiv.appendChild(writer);
 		divs.appendChild(newdiv);
 	}
-	replace();
+	
 	};
 
 });
