@@ -2,18 +2,28 @@
 var obj=[];
 
 $(document).ready(function () {
+	(function(){
+    var imgDiv = document.getElementById("imgDiv");
+
+    var show = function(){
+      imgDiv.style.display = "block";
+      setTimeout(hide, 2000);  // 2 seconds
+    }
+
+    var hide = function(){
+      imgDiv.style.display = "none";
+    }
+
+    show();
+  })();
+  
 	$.getJSON( "json2.json", function( data ) {
   		clearMainDiv();
   		data.reverse();
       	print(data);
   	});
  
-	var replace = function(){
-		var str = $(".description").html();
-		console.log(str); 
-    	var res = str.replace(/,/g, "</br>");
-		$(".description").html(res);
-	};
+	
 
 	var clearMainDiv = function(){
 	var divs=document.getElementById("maindiv");
@@ -60,7 +70,7 @@ $(document).ready(function () {
 		newdiv.appendChild(writer);
 		divs.appendChild(newdiv);
 	}
-	replace();
+	
 	};
 
 });
