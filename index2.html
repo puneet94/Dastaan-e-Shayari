@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dastaan-e-Shayari</title>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+		
+		<script src="less.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+		
+		<script src="jquery-1.3.2.min.js"></script>
+		<style type = "text/css">
+			.hindi-content{
+				display:none;
+			}
+			.box-heading{
+				display:inline;
+			}
+			.box-heading > a:before{
+   				content: "▷";
+			}
+
+			.box-heading > a.active:before{
+   				content: "▼";
+			}
+		</style>
+		<script type="text/javascript" >
+			$(document).ready(function(){
+	
+				$(".arrow").click(function(){
+   					$(this).toggleClass("active");
+   					$(this).parent(".box-heading").siblings(".hindi-content").slideToggle( "slow");
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div class="main" id="maindiv">
+			
+			
+			<section class="innerDiv" id="my0Section">
+				<div class="description">
+						Milte hi nazar dil dil dil milaya nahi jata <br> aaghaaz ko anjaam banaya nahi jata <br> ek safar mukammal nahi hota kai khadmo ke bina <br> pehle hi khadm ko manzil banaya nahi jata
+				</div>
+				<!--&#9658;-->
+				<div class="box-heading">
+				<a class="arrow" href="javascript:void(0);" id="switch-filters">
+					<span></span> Hindi</a>
+				</div>					
+				<span class="writer_title">Writer:</span>
+				<span class="category">name1</span>
+				<div class="hindi-content">
+					मिलते ही नज़र दिल मिलाया नही जाता  </br>आगाज़ को अंजाम बनाया नही जाता </br> एक सफ़र मुकम्मल नही होता कई खदमो के बिना </br> पहले ही कदम को मंज़िल बनाया नही जाता"
+				</div>
+			</section>
+			<section class="innerDiv" id="my0Section">
+				<div class="description">
+						Milte hi nazar dil dil dil milaya nahi jata <br> aaghaaz ko anjaam banaya nahi jata <br> ek safar mukammal nahi hota kai khadmo ke bina <br> pehle hi khadm ko manzil banaya nahi jata
+				</div>
+				<!--&#9658;-->
+				<div class="box-heading">
+				<a class="arrow" href="javascript:void(0);" id="switch-filters">
+					<span></span> Hindi</a>
+				</div>					
+				<span class="writer_title">Writer:</span>
+				<span class="category">name1</span>
+				<div class="hindi-content">
+					मिलते ही नज़र दिल मिलाया नही जाता  </br>आगाज़ को अंजाम बनाया नही जाता </br> एक सफ़र मुकम्मल नही होता कई खदमो के बिना </br> पहले ही कदम को मंज़िल बनाया नही जाता"
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
